@@ -5,6 +5,34 @@
  * @copyright 2013 Taufan Aditya
  */
 
+@table-border-color: #ddd;
+@panel-bg: #fff;
+@panel-default-heading-bg: #f5f5f5;
+@font-family-monospace: Menlo, Monaco, Consolas, "Courier New", monospace;
+@font-size-base: 14px;
+@input-bg: #fff;
+@input-bg-disabled: #eee;
+@input-border-focus: #66afe9;
+
+@font-face {
+  font-family: 'markdown-editor';
+  src: url('../font/markdown-editor.eot?68085969');
+  src: url('../font/markdown-editor.eot?68085969#iefix') format('embedded-opentype'),
+       url('../font/markdown-editor.woff?68085969') format('woff'),
+       url('../font/markdown-editor.ttf?68085969') format('truetype'),
+       url('../font/markdown-editor.svg?68085969#markdown-editor') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.box-shadow(@v: "0 0 5px #000") {
+  -webkit-box-shadow: @v;
+  -moz-box-shadow: @v;
+  -ms-box-shadow: @v;
+  -o-box-shadow: @v;
+  box-shadow: @v;
+}
+
 .md-editor {
   display: block;
   border: 1px solid @table-border-color;
@@ -17,6 +45,15 @@
 
   > .md-header {
     margin: 0;
+
+    > .btn-group {
+      display: inline-block;
+      margin: 0 10px;
+
+      &:first-child {
+        margin-left: 0;
+      }
+    }
   }
 
   > .md-preview {
@@ -171,10 +208,63 @@
   .md-fullscreen-controls {
     display: none;
   }
+
+  .btn {
+    display: inline-block;
+    background-color: #fff;
+    border: solid 1px #ccc;
+    border-radius: 2px;
+    padding: 5px 10px;
+    margin: 0 2px;
+  }
+
+  .glyphicon:before {
+    font-family: 'markdown-editor';
+  }
+
+  .glyphicon-bold:before {
+    content: "\e800";
+  }
+
+  .glyphicon-italic:before {
+    content: "\e801";
+  }
+
+  .glyphicon-header:before {
+    content: "\e802";
+  }
+
+  .glyphicon-link:before {
+    content: "\e803";
+  }
+
+  .glyphicon-picture:before {
+    content: "\e804";
+  }
+
+  .glyphicon-list:before {
+    content: "\e805";
+  }
+
+  .glyphicon-th-list:before {
+    content: "\e806";
+  }
+
+  .glyphicon-asterisk:before {
+    content: "\e807";
+  }
+
+  .glyphicon-comment:before {
+    content: "\e808";
+  }
+
+  .glyphicon-search:before {
+    content: "\e809";
+  }
 }
 
 .md-nooverflow {
   overflow: hidden;
   position: fixed;
-  width: 100%;    
+  width: 100%;
 }

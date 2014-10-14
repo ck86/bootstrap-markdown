@@ -1,11 +1,12 @@
 {
-  "name": "bootstrap-markdown",
+  "name": "markdown-editor",
   "version": "2.7.0",
-  "main": ["./js/bootstrap-markdown.js", "./css/bootstrap-markdown.min.css"],
+  "main": [
+    "./js/markdown-editor.js",
+    "./css/markdown-editor.css"
+  ],
   "dependencies": {
-    "bootstrap": "~3.1.1"
-  },
-  "devDependencies": {
-  	"markdown":"~0.4.0"
+    "jquery": "1.11",
+    "markdown": "~0.4.0"
   }
 }
