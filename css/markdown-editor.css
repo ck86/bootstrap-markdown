@@ -6,8 +6,8 @@
  */
 @font-face {
   font-family: 'markdown-editor';
-  src: url('../font/markdown-editor.eot?68085969');
-  src: url('../font/markdown-editor.eot?68085969#iefix') format('embedded-opentype'), url('../font/markdown-editor.woff?68085969') format('woff'), url('../font/markdown-editor.ttf?68085969') format('truetype'), url('../font/markdown-editor.svg?68085969#markdown-editor') format('svg');
+  src: url('../font/markdown-editor.eot');
+  src: url('../font/markdown-editor.eot#iefix') format('embedded-opentype'), url('../font/markdown-editor.woff') format('woff'), url('../font/markdown-editor.ttf') format('truetype'), url('../font/markdown-editor.svg#markdown-editor') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -205,6 +205,9 @@
 }
 .md-editor .glyphicon-search:before {
   content: "\e809";
+}
+.md-editor .glyphicon-line:before {
+  content: "\e80a";
 }
 .md-nooverflow {
   overflow: hidden;
