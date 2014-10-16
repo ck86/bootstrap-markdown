@@ -173,6 +173,9 @@
   padding: 5px 10px;
   margin: 0 2px;
 }
+.md-editor .btn.hidden {
+  display: none;
+}
 .md-editor .glyphicon:before {
   font-family: 'markdown-editor';
 }
